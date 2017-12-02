@@ -1,0 +1,109 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage [T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\graphicspath{{figures/}{anotherFigureDirectory/}}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+\lstdefinelanguage{FSharp}
+                {morekeywords={let, new, match, with, rec, open, module, namespace, type, of, member, and, for, in, do, begin, end, fun, function, try, mutable, if, then, else},
+    keywordstyle=\color{bluekeywords},
+    sensitive=false,
+    morecomment=[l][\color{greencomments}]{///},
+    morecomment=[l][\color{greencomments}]{//},
+    morecomment=[s][\color{greencomments}]{{(*}{*)}},
+    morestring=[b]",
+    stringstyle=\color{redstrings}
+    }
+
+\usepackage{amsmath}
+\title{PoP aflevering 2 }
+\author{Bjørn Møller }
+\begin{document}
+\maketitle 
+\section{opgave 1:}
+I denne opgave skal vi blot udfylde nedenstående tabel: \\ \\ \\
+\begin{tabular} {l |l |l |l }
+\centering
+				Decimal&Binær&Hexidecimal&Oktal \\
+				10&1010&A&12\\
+                21&10101&15&25\\
+                63&111111&3f&77\\
+                63&111111&3f&77\\
+\end{tabular}\\
+Jeg har nedenstående lavet udregningerne fordelt på hviilken række, der er tale om:\\ \\
+Første række:\\
+Givne række er deci = 10\\ \\
+\begin{tabular} {l|l |l |l | }
+Deci&Binær&Hexi&Oktal\\
+ 10&10 \% 8 =1 med rest 2& 10\% 16 med rest 10& 10\% 8 = 1 med rest 2 \\
+ 10&2 \% 4 =  0 med rest  2&..&..\\
+ 10&2 \% 2 = 1 med rest 0&..&..\\
+ 10&1 \% 2 = 0 med rest 0&..&..\\
+deci = 10&Binær = 1010& Hexi = A&Oktal = 12\\
+\end{tabular}\\ \\
+
+Anden række:\\
+Givne række er binær = 10101\\ \\
+\begin{tabular} {l|l |l |l | }
+Deci&Binær&Hexi&Oktal\\
+ 2**0+2**2 + 2**4 = 21  &10101& 21\% 16 = 1 med rest 5& 21\% 8 = 2 med rest 5 \\
+ ..&10101&..&..\\
+ --&10101&..&..\\
+ --&10101&..&..\\
+deci = 10&Binær = 10101& Hexi = 15&Oktal = 25\\
+\end{tabular}\\ \\
+
+Tredje række:\\
+Givne række er Hexi = 3f\\ \\
+\begin{tabular} {l|l |l |l | }
+Deci&Binær&Hexi&Oktal\\
+ 3*16**1 + 15 *16**0 = 63 &63\%32 = 1 med rest 31& 3f& 63\% 8 = 7 med rest 7 \\
+ ..                       &31\%16=  1 med rest 15&3f&..\\
+ --                       &15\%8=   1 med rest 7&3f&..\\
+ --                       &7\%4=    1 med rest 3&3f&..\\
+ --                       &3\%2=    1 med rest 1&3f&..\\
+ --                       &1\%1=    1 med rest 0&3f&..\\
+deci = 63&Binær = 111111& Hexi = 3f&Oktal = 77\\
+\end{tabular}\\ \\
+
+fjerd række:\\
+Givne række er Oktal = 77\\ \\
+
+\begin{tabular} {l|l |l |l | }
+Deci&Binær&Hexi&Oktal\\
+ 7*8**1 + 7 *8**0 = 77 &63\%32 = 1 med rest 31&63\%16 = 3 med rest 15 &77 \\
+ ..                    &31\%16=  1 med rest 15&..&77\\
+ --                    &15\%8=   1 med rest 7&..&77\\
+ --                    &7\%4=    1 med rest 3&..&77\\
+ --                    &3\%2=    1 med rest 1&..&77\\
+ --                    &1\%1=    1 med rest 0&..&77\\
+deci = 63&Binær = 111111& Hexi = 3f&Oktal = 77\\
+\end{tabular}\\ \\
+
+\section{Opgave 2}
+I denne opgave var hovedformålet at lave en kode, som trak første og andet ord ud fra sætningen\\ "Hallo world"\\
+Dette er gjort med nedenstående kode:
+\begin{lstlisting}[language=FSharp]
+let a = "hello world"
+let b = a.[0..4]
+let c = a.[ 6.. 10]
+do printfn "%A " b 
+do printfn "%A " c
+;;
+\end{lstlisting}
+Dette giver det ønskede output ; \\
+"hello"\\
+"world"\\
+\end{document}

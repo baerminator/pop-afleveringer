@@ -1,0 +1,94 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage [T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\graphicspath{{figures/}{anotherFigureDirectory/}}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{array}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+\lstdefinelanguage{FSharp}
+                {morekeywords={let, new, match, with, rec, open, module, namespace, type, of, member, and, for, in, do, begin, end, fun, function, try, mutable, if, then, else},
+    keywordstyle=\color{bluekeywords},
+    sensitive=false,
+    morecomment=[l][\color{greencomments}]{///},
+    morecomment=[l][\color{greencomments}]{//},
+    morecomment=[s][\color{greencomments}]{{(*}{*)}},
+    morestring=[b]",
+    stringstyle=\color{redstrings}
+    }
+
+\usepackage{amsmath}
+\title{DMA aflevering 6 }
+\author{Bjørn Møller }
+\begin{document}
+\maketitle 
+\section*{del 1}
+\subsection*{(1)}
+Vi bruger her svag induktion, da resultatet gælder for alle n
+Vi skal vise ved induktion at $ F_n <= 2^n$. Dette gøres ved to skridt.\\
+Første skridt er basis skridtet, altså $F_1 <= 2^{1}$. Dette er åbenlyst, da $F_1 = 1$ og $2^1 = 2$, altså er basis skridtet opfyldt.\\
+Nu laves induktions skridtet. Vi antager altså, at $ F_n <= 2^n$ gælder og vil nu bevise, at under denne antagelse, så vil
+$ F_{n+1} <= 2^{n+1}$ også være sand.\\
+vi ved ud fra definitionen på fibonaccitallene, at $F_{n+1} = F_{n} + F_{n-1}$ og at $2^{n+1} = 2* 2^n $. Vi bemærker da, at ud fra vores antagelse gælder $F_{n} + F_{n-1} <= 2^{n-1} + 2^{n} <= 2* 2^n $. Vi har hermed bevist induktions skridtet.
+\subsection*{(2)}
+Vi gennemfører endnu en induktion for at vise at $ (3/2)^{n-1} <= F_n$\\
+Vi bruger her stærk induktion, da der gælder n, hvor det ikke er tilfældet, hvilket vi skal test
+Basis skridt:\\
+vi sætter n = 0 og ser, at $Fib(0) = 0 $ og at $(3/2)^{0-1} = 2/3$.
+vi sætter n = 1 og ser, at $Fib(1) = 1 $ og at $(3/2)^{1-1} = 1$.
+vi sætter n = 5 og ser, at $Fib(5) = 5 $ og at $(3/2)^{5-1} = 5.0625$.
+vi sætter n = 6 og ser at $Fib(6) = 8 $ og at $(3/2)^{6-1} = 7.59$. Altså er basis skridtet opfyldt.\\
+induktions skridtet:\\
+Vi antager at $ (3/2)^{n-1} <= F_n$ er sandt, og vi vil så vise, at under denne antagelse er $ (3/2)^{n} <= F_{n+1}$\\ 
+Vi ved allerede, at $F_{n+1} = F_{n} + F_{n-1}$, så vi undersøger værdien $(3/2)^{n}$, hvilket kan skrives\\
+$(3/2)^{n-2}* (3/2)^2 $.\\
+Vi ved desuden, at der gælder at $ (3/2) + 1  > (3/2)^2 $, hvilket betyder, at: \\
+$(3/2)^{n} = (3/2)^{n-2}* (3/2)^2 < (3/2)^{n-2}* ((3/2)+1) = (3/2)^{n-2} + (3/2)^{n-1} $\\
+Vi har allerede antaget, at $ (3/2)^{n-1} <= F_n$ er sandt, hvilket medfører at:\\
+$(3/2)^{n} = (3/2)^{n-2}* (3/2)^2 < (3/2)^{n-2} + (3/2)^{n-1} < F_{n} + F_{n-1} = F_{n+1} $\\
+Vi har altså igennem loven om transativitet, at $ (3/2)^{n} <= F_{n+1}$\\
+\subsection*{(3)}
+Vi ved at fibonaccitallene er: $ (3/2)^{n-1} <= F_n <= 2^n $ når n tilhører (6.7.8...). Dette betyder, at vi ved at fibonaccitallene er af $\Theta(a^n)$, hvor a ligger imellem 3/2 og 2, da funktionen er bundet både ovenfra og nedenfra. Dette må så medføre, at logaritmen til denne funktion må være $\Theta(n)$, da worst case køretid indeholdende logaritmer ikke afhænger af konstanten a, da denne blot er log(a) ganget på køretiden n. Vi behøves derfor ikke vide, hvilken værdi a antager for at kende køretiden til log fib(n).
+\section*{del 2}
+\subsection*{(1)}
+Denne pseudokode undersøger, om et givet indput b går op i a, matematisk formuleret som $ a \% b = 0$. 
+Dette kan ses ved at funktionen returnerer en boolsk værdi, som returnere som true, hvis efter while løkken stoppes at x = 0.
+Y er en variabel, som fortæller , hvor mange gennemkørsler en while løkken har gennemkørt, hvilket er en anden måde at undersøge, hvor mange gange b går op i a. Det skal dog bemærkes, at y værdien ikke returnere.\\
+To basis eksempler er:\\
+MUL (4,2) = True\\
+Et kort gennemløb kan beskrives således: x sættes til a og løkken vil derefter trække værdien b fra x og ligge en til akkumulatoren y så længe x er større end b.\\
+I dette tilfælde bliver løkken kørt 2 gange, da x derefter vil være 0 og dermed være mindre end b. Da x = 0 vil koden returnere true
+MuL (4,3) = False\\
+I Dette tilfælde bliver løkken kørt 1 gang da  bliver lig 4 -3 = 1 , hvilket er mindre end b = 3. Denne gang er x dog ikke 0 og derfor vil koden returnere FALSE
+\subsection*{(2)}
+Vi bruger svag induktion, da dette resultat skal gælde for alle n.\\
+For en nemhed skyld omskriver vi venstresiden til $ (a - b* n) + n * b $, da vi indser at, x afhænger lineært negativt af n med hældning b, og y afhænger positivt lineært af n med hældning 1, hvor y skal ganges med b.  Det er relativt simpelt, at se at denne funktion altid vil give a, men vi vil for opgavens skyld gennemføre induktion
+Vi starter med basistilfældet, altså hvor n = 0. Her gælder at x = a og y = 0, altså:\\
+$ x_0 +  y_0 * b = a - 0*b + 0* b = a $\\
+Hermed er basisskridtet bevist. Vi skal nu bevise induktions skridtet:\\
+Vi antager altså at $ x_n +  y_n * b = a$ , og vil nu bevise, at  $ x_{n+1} +  y_{n+1} * b = a$\\
+Vi ved altså, at der må gælde  $x_n +  y_n * b - x_{n+1} -  y_{n+1} * b = 0 $.
+Vi omskriver til: \\
+$a - n*b + n* b -(a - (n+1)*b + (n+1)* b) = 0$\\
+Hermed er induktionsskridtet bevist.
+
+\subsection*{(3)}
+For at bevise, at denne algoritme fungerer, som jeg har beskrevet er det nødvendigt, at undersøge dens Loop invarians, hvilket kræver, at vi undersøger 3 ting: Initialisation , maintenance og termination. \\
+Initialisation: Inden Loopet går igang har X værdien a og y værdien 0. Dette betyder, at invarianten, som også er undersøgt i 2.2 gælder, altså at : $X_n + b * Y_N = a$\\
+Maintenance: for hvert loop udføres processen x = x - b og y = y + 1. vi har allerede bevist, at for en vilkårlig mængde loop vil invarianten gælde. Dette er gjort i 2.2 \\
+Termination: Vi ser , at efter der er blevet loopet et hvis antal gange, vil der gælde at x < b . Dette terminerer loopet, men invarianten vil dog stadigt gælde, da ligheden  $X_n + b * Y_N = a$ gælder for alle N. Man kan endda bemærke, at hvis loopet kørte uendeligt, og altså ikke stoppede når b > x, ville ligheden stadigt holde, da venstresiden altid stiger og falder med b for hvert n.
+ \end{document}

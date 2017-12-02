@@ -1,0 +1,185 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage [T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\graphicspath{{figures/}{anotherFigureDirectory/}}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+\lstdefinelanguage{FSharp}
+                {morekeywords={let, new, match, with, rec, open, module, namespace, type, of, member, and, for, in, do, begin, end, fun, function, try, mutable, if, then, else},
+    keywordstyle=\color{bluekeywords},
+    sensitive=false,
+    morecomment=[l][\color{greencomments}]{///},
+    morecomment=[l][\color{greencomments}]{//},
+    morecomment=[s][\color{greencomments}]{{(*}{*)}},
+    morestring=[b]",
+    stringstyle=\color{redstrings}
+    }
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\title{PoP aflevering 3}
+\author{Bjørn Møller }
+\begin{document}
+\maketitle
+\subsection*{i3.0}
+\textbf{a}\\
+I denne opgave skulle nedenstående kode laves:\\
+\begin{lstlisting}[language=FSharp]
+let sum n = (
+ let mutable i = 1
+ let mutable total = 0 
+ while i <= n do
+    total <- total + i
+    i <- i + 1 
+ total)
+printfn "sum med n = %i  giver  %A" 3  (sum 3)
+\end{lstlisting}
+Resultatet af koden er: "sum med n = 3 giver 6\\
+Her kan desduden ses, at der er brugt den eftersøgte "while" - løkke, som blev efterspurgt i opgaven. Løkken vil derfor køre indtil, at den 
+Den har kørt antal omgange svarende til indputtet n.
+\\
+\textbf{b}\\ \\
+I denne opgave skulle nedenstående kode laves:\\
+\begin{lstlisting}[language=FSharp]
+let smartsum n = (n*(n+1)/2 )
+printfn "smartsum med n = %i giver  %A" 3  (smartsum 3) 
+\end{lstlisting}
+Resultatet af koden er: "smartsum med n = 3 giver 6
+\newpage
+\textbf{c}\\
+I denne opgave skulle nedenstående kode laves:\\
+\begin{lstlisting}[language=FSharp]
+let sum n = (
+ let mutable i = 1
+ let mutable total = 0 
+ while i <= n do
+    total <- total + i
+    i <- i + 1 
+ total)
+
+let smartsum n = (n*(n+1)/2 )
+printfn "smartsum med n = %i giver  %A" 3  (smartsum 3) 
+
+for n = 0 to 10 do
+    printfn "%5i %5i %5i" n (sum n) (smartsum n)
+
+\end{lstlisting}
+Denne koder giver en tabel i tone med nedenstående: \\
+\begin{tabular}{l|l|l}
+0&0&0\\
+1&1&1\\
+2&3&3\\
+3&6&6\\
+4&10&10\\
+5&15&15\\
+6&21&21\\
+7&28&28\\
+8&36&36\\
+9&45&45\\
+10&55&55\\
+\end{tabular} \\
+Vi kan altså konkludere, at de to koder fungerer ens. \\ \\
+\textbf{d}\\
+For at løse denne opgave har jeg kørt nedenstående kode, og derefter undersøgt, ved hvilket n,  at deres output bliver negativt, hvilket er en konsekvens af "overflow": \\ \\
+\begin{lstlisting}[language=FSharp]
+let sum n = (
+ let mutable i = 1
+ let mutable total = 0 
+ while i <= n do
+    total <- total + i
+    i <- i + 1 
+ total)
+
+let smartsum n = (n*(n+1)/2 )
+printfn "smartsum med n = %i giver  %A" 3  (smartsum 3) 
+
+for n = 0 to 66500 do
+    printfn "%5i %5i %5i" n (sum n) (smartsum n)
+\end{lstlisting}
+Ved at køre denne kode kan jeg konkluderere, at det maksimale n = 46340 for smartsum før den laver overflow, hvor overflow først sker ved n = 65536 for funktionen sum.  Man kan ligeledes bemærke, at ved n = 65536 går smartsum igen fra negativ til positiv. Disse fakta giver god mening eftersom smartsum udregner $n*n$. Variablen bliver altså dobbelt så stor inden den divideres med 2. Dette gør reelt, at variablen holder en dobbelt så stor værdi, som den normale sum. \\ \\
+Man kan delvist løse ovenstående overflow problem, ved at omdanne disse integers til float variable som kan indeholde større variable.\\
+Et eksempel på dette, er vist i nedenstående kode: \\
+\begin{lstlisting}[language=FSharp]
+let sum (n: float) = (
+ let mutable i = 1. 
+ let mutable total = 0.  
+ while i <= n do
+    total <- total + i
+    i <- i + 1.
+ total)
+
+let smartsum (n: float) = (n*(n+1.)/2. )
+printfn "smartsum med n = %f giver  %A" 3.  (smartsum 3.) 
+
+for n = 0 to 10   do
+    let y = float(n)
+    printfn "%5f %5f %5f" y (sum y) (smartsum y)
+\end{lstlisting}
+\subsection*{i3.1}
+
+\textbf{a}\\
+Denne Opgave kan løses med nedenstående kode:\\ 
+\begin{lstlisting}[language=FSharp]
+let multable j  = (
+ let mutable str = sprintf "\n%4s " (" ")
+ for n = 1 to 10 do
+  str <- str + sprintf "%4i" n 
+ str <- sprintf  "%4s" str
+
+ for n = 1 to 10 do
+  str <- sprintf "%s\n %4i" str (n)
+ for y = 1 to 10 do
+   let k = sprintf "%4i" (n * y)
+   str <- str  + k
+ let b = j*46+44 
+ sprintf "%s" str.[0..b]    
+)
+printf "%s"  (multable 1)
+\end{lstlisting}
+Man i koden se, at jeg har sat $b = j* 46 + 44$. Dette tal virker en smule tilfældigt, men er reelt et tal, som medfører at for hvert n bliver den tilhørende række printet ud. Den første række bliver altid printet ud derfor lægges 44 til. For hvert n bliver der tilført 44 +2 , da der er 11 pladser med 4 længder mellem hver ergo 44, og de to ekstra sørger for linje skiftet.\\ 
+\newpage
+\textbf{b}\\
+Denne Opgave kan løses med nedenstående kode:\\ 
+\begin{lstlisting}[language=FSharp]
+let Loopmultable a = (
+ let mutable str = sprintf "\n%4s " (" ")
+ for n = 1 to 10 do
+  str <- str + sprintf "%4i" n 
+ str <- sprintf  "%4s" str
+
+ for n = 1 to a do
+  str <- sprintf "%s\n %4i" str (n)
+  for y = 1 to 10 do
+   let k = sprintf "%4i" (n * y)
+   str <- str  + k        
+ str 
+)
+\end{lstlisting}
+I denne kode, afhænger antallet af printede rækker dynamisk af indputtet, da indputtet n bruges til at bestemme hvor mange gange Den yderste løkke kører, hvilket opgbygger den færdige .
+\\ \textbf{c}\\
+Denne Opgave kan løses med nedenstående kode:\\ 
+\begin{lstlisting}[language=FSharp]
+let test n = (
+    (Loopmultable n) = (multable n)
+)
+printfn "n test(n) "
+for n = 1 to 10 do
+ printfn "%A %A"n (test n)
+\end{lstlisting}
+En gennemkørsel fra n = 1 til 10, viser, returnere TRUE for alle n, at de er identiske ved alle n. Dette giver reelt mening, da begge koder i mine forskellige test af n har returneret identiske strenge.
+\\ \textbf{d} \\
+Ved en simpel test, kan man se, at den kosmetiske forskel er, at hvis du forsøger at printe en string med $\%A$ kommer der citations tegn rundt om værdierne printet ud, hvilket der ikke gør hvis man bruger $\%s$. Dette er fordi, at $\%A$ bruger disse tegn til at fortælle, at værdien den viser er en string, hvilket $\%s$ ikke behæver, da den kun modtager string elementer.
+\end{document}
