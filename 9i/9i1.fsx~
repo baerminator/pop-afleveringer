@@ -1,0 +1,10 @@
+///Forfatter: Bjørn Møller,Hold: 9, Opgave: 9i1
+/// <summary> Herunder er safeindexif lavet med tilhørende test af om denne fungerer med fejl og uden fejl  </summary>
+let FileReplace filename needle replace =
+    let (fildata: System.IO.Stream) =
+        try
+         System.IO.File.OpenText
+        with
+         _ -> failwith " forkert filnavn"
+    let data = fildata.ReadToEnd
+    printfn 

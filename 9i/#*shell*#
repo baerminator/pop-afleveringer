@@ -1,0 +1,618 @@
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ firefox 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ firefox 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+<null>
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"2"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+2
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22ad95028e4c8fa745038395ad225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00042] in <5a22ad95028e4c8fa745038395ad225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22ad95028e4c8fa745038395ad225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00042] in <5a22ad95028e4c8fa745038395ad225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22afd2028e4c8fa7450383d2af225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00042] in <5a22afd2028e4c8fa7450383d2af225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22afd2028e4c8fa7450383d2af225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00042] in <5a22afd2028e4c8fa7450383d2af225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+<null>
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+Some 3
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+2
+vi tester om SafeIndexif virker uden fejl : <null> og med fejl: <null> 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f651028e4c8fa745038351f6225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00096] in <5a22f651028e4c8fa745038351f6225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f651028e4c8fa745038351f6225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00096] in <5a22f651028e4c8fa745038351f6225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 0 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f709028e4c8fa745038309f7225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00094] in <5a22f709028e4c8fa745038309f7225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f709028e4c8fa745038309f7225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00094] in <5a22f709028e4c8fa745038309f7225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 2147483647 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f817028e4c8fa745038317f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00094] in <5a22f817028e4c8fa745038317f8225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f817028e4c8fa745038317f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00094] in <5a22f817028e4c8fa745038317f8225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 2147483647 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f85e028e4c8fa74503835ef8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000c2] in <5a22f85e028e4c8fa74503835ef8225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f85e028e4c8fa74503835ef8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000c2] in <5a22f85e028e4c8fa74503835ef8225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 2147483647 
+vi tester om SafeIndexif virker uden fejl:2 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f899028e4c8fa745038399f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000dc] in <5a22f899028e4c8fa745038399f8225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f899028e4c8fa745038399f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000dc] in <5a22f899028e4c8fa745038399f8225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 2147483647 
+vi tester om SafeIndexif virker uden fejl: 2 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f8d0028e4c8fa7450383d0f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000dc] in <5a22f8d0028e4c8fa7450383d0f8225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f8d0028e4c8fa7450383d0f8225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x000dc] in <5a22f8d0028e4c8fa7450383d0f8225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i0.fsx && mono 9i0.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+vi tester om SafeIndexif virker uden fejl : 2 og med fejl: 2147483647 
+vi tester om SafeIndexif virker uden fejl : Some 2 og med fejl: <null> 
+vi tester om SafeIndexif virker uden fejl: 2 
+
+Unhandled Exception:
+System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f900028e4c8fa745038300f9225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00152] in <5a22f900028e4c8fa745038300f9225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: fejl!!!
+  at 9i0.safeIndexWith (System.Int32[] arr, System.Int32 int) [0x00010] in <5a22f900028e4c8fa745038300f9225a>:0 
+  at <StartupCode$9i0>.$9i0$fsx.main@ () [0x00152] in <5a22f900028e4c8fa745038300f9225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+<fun:data@9>
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+<fun:FileReplace@9>
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+
+Unhandled Exception:
+System.Exception:  forkert filnavn
+  at 9i1.FileReplace[a,b] (System.String filename, a needle, b replace) [0x0000f] in <5a22ff57fecf4c8ea745038357ff225a>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00000] in <5a22ff57fecf4c8ea745038357ff225a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception:  forkert filnavn
+  at 9i1.FileReplace[a,b] (System.String filename, a needle, b replace) [0x0000f] in <5a22ff57fecf4c8ea745038357ff225a>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00000] in <5a22ff57fecf4c8ea745038357ff225a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+
+/home/baerminator/Documents/uni/datalogi/1.semester/pop/afleveringer/9i/9i1.fsx(6,9): error FS0003: This value is not a function and cannot be applied.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+///Forfatter: Bjørn Møller,Hold: 9, Opgave: 9i1
+/// <summary> Herunder er safeindexif lavet med tilhørende test af om denne fungerer med fejl og uden fejl  </summary>
+let FileReplace filename needle replace =
+    let (fildata: System.IO.StreamReader) =
+        try
+            System.IO.File.OpenText filename
+        with
+            _ -> failwith " forkert filnavn"
+    let line = fildata.ReadToEnd()
+    printfn "%s" line
+
+FileReplace "9i1.fsx" "1" "1"
+
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"///Forfatter: Bjørn Møller,Hold: 9, Opgave: 9i1
+/// <summary> Herunder er safeindexif lavet med tilhørende test af om denne fungerer med fejl og uden fejl  </summary>
+let FileReplace filename (needle: string) (replace: string) =
+    let (filfisse: System.IO.StreamReader) =
+        try
+            System.IO.File.OpenText filename
+        with
+            _ -> failwith " forkert filnavn"
+    let fisse = filfisse.ReadToEnd()
+    let output = fisse.Replace (needle, replace)
+    printfn "%A" output
+
+FileReplace "9i1.fsx" "fisse" "fisse"
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ touch test9i1.txt
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ gnome-open test9i1.txt 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ ls
+9i0.exe  #9i0.fsx#  9i0.fsx  9i0.fsx~  9i1.exe  9i1.fsx  9i1.fsx~  FSharp.Core.dll  test9i1.txt
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ ls
+9i0.exe  #9i0.fsx#  9i0.fsx  9i0.fsx~  9i1.exe  9i1.fsx  9i1.fsx~  FSharp.Core.dll  test9i1.txt
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"Dette er en lille nice test som ændrer undersøger om jeg har klokket i den =) 
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"Dette er en lille hyggelig test som ændrer undersøger om jeg har klokket i den =) 
+"
+"Dette er en lille nice test som ændrer undersøger om jeg har klokket i den =) 
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+
+Unhandled Exception:
+System.IO.IOException: Sharing violation on path /home/baerminator/Documents/uni/datalogi/1.semester/pop/afleveringer/9i/test9i1.txt
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool)
+  at System.IO.File.CreateText (System.String path) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at 9i1.FileReplace (System.String filename, System.String needle, System.String replace) [0x0002d] in <5a2317bffecf4c8ea7450383bf17235a>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00000] in <5a2317bffecf4c8ea7450383bf17235a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.IO.IOException: Sharing violation on path /home/baerminator/Documents/uni/datalogi/1.semester/pop/afleveringer/9i/test9i1.txt
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool)
+  at System.IO.File.CreateText (System.String path) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at 9i1.FileReplace (System.String filename, System.String needle, System.String replace) [0x0002d] in <5a2317bffecf4c8ea7450383bf17235a>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00000] in <5a2317bffecf4c8ea7450383bf17235a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+""
+""
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"vi laver en test 
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"dette er vores test
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+"test for satan fdfd vores 
+"
+"test for satan fdfd vores 
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""1111
+1111""1111
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"test for satan fdfd vores 
+"1111
+1111"test for satan fdfd vores 
+"1111
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""1111
+1111""1111
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"fsaglkasgl lsæa vores 
+"1111
+1111"fsaglkasgl lsæa vores 
+"1111
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej dette er vores stil
+"1111
+1111"hej dette er vores stil
+"1111
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej dette er vores stil
+"
+2222"hej dette er vores stil
+"
+333"hej dette er vores stil
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"dett er en test 
+"
+2222"dett er en test 
+"
+333"dett er en test 
+"
+4444"dett er en test 
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"reload reload min RØV!!!!
+"
+2222"reload reload min RØV!!!!
+"
+333"reload reload min RØV!!!!
+"
+4444"reload reload min RØV!!!!
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""
+2222""
+333""
+4444""
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"dette er en FUCKING TEST !!!!!!!!!!!!!!!!!
+"
+2222"dette er en FUCKING TEST !!!!!!!!!!!!!!!!!
+"
+333"dette er en FUCKING TEST !!!!!!!!!!!!!!!!!
+"
+4444"dette er en FUCKING TEST !!!!!!!!!!!!!!!!!
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"sædlkjg sdlg dfslkgj rsd
+"
+2222"sædlkjg sdlg dfslkgj rsd
+"
+333"sædlkjg sdlg dfslkgj rsd
+"
+4444"sædlkjg sdlg dfslkgj rsd
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""
+2222""
+333""
+4444""
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""
+2222""
+333""
+4444""
+
+Unhandled Exception:
+System.IO.IOException: Sharing violation on path /home/baerminator/Documents/uni/datalogi/1.semester/pop/afleveringer/9i/test9i1.txt
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool)
+  at System.IO.File.CreateText (System.String path) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00014] in <5a232030fecf4c8ea74503833020235a>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.IO.IOException: Sharing violation on path /home/baerminator/Documents/uni/datalogi/1.semester/pop/afleveringer/9i/test9i1.txt
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0001c] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00055] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool)
+  at System.IO.File.CreateText (System.String path) [0x00000] in <9790d962aaad40deb63d33029ba0d2f6>:0 
+  at <StartupCode$9i1>.$9i1$fsx.main@ () [0x00014] in <5a232030fecf4c8ea74503833020235a>:0 
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111""
+2222""
+333""
+4444""
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums"
+2222"hej din dums"
+333"hej din dums"
+4444"hej din dums"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums"
+2222"hej din dums"
+333"hej din dums"
+4444"hej din dums"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums"
+2222"hej din dums"
+333"hej din dums"
+4444"hej din dums"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums"
+2222"hej din dums"
+333"hej din dums"
+4444"hej din dums"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums"
+2222"hej din dums"
+333"hej din dums"
+4444"hej din dums"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums
+"
+2222"hej din dums
+"
+333"hej din dums
+"
+4444"hej din dums
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din bums
+
+"
+2222"hej din bums
+
+"
+333"hej din bums
+
+"
+4444"hej din bums
+
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din bums
+
+
+"
+2222"hej din bums
+
+
+"
+333"hej din bums
+
+
+"
+4444"hej din bums
+
+
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums
+
+
+
+"
+2222"hej din dums
+
+
+
+"
+333"hej din dums
+
+
+
+"
+4444"hej din dums
+
+
+
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din dums
+
+
+
+
+"
+2222"hej din dums
+
+
+
+
+"
+333"hej din dums
+
+
+
+
+"
+4444"hej din dums
+
+
+
+
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+1111"hej din bums
+
+
+
+
+
+"
+2222"hej din bums
+
+
+
+
+
+"
+333"hej din bums
+
+
+
+
+
+"
+4444"hej din bums
+
+
+
+
+
+"
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i1.fsx && mono 9i1.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i2.fsx && mono 9i2.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+345
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ fsharpc 9i2.fsx && mono 9i2.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+345
+baerminator@baerminator-pc:~/Documents/uni/datalogi/1.semester/pop/afleveringer/9i$ 
